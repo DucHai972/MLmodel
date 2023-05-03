@@ -22,6 +22,8 @@ X_train, X_val, y_train, y_val, z_train, z_val = train_test_split(X_train_val, y
 lr_model = lr().fit(X_train, y_train)
 
 y_pred = lr_model.predict(X_train)
+
+print("Đánh giá training set (LR): ")
 print('R2 score:', r2_score(y_train, y_pred))
 print('Person R:', pearsonr(y_train, y_pred))
 print('RMSE:', np.sqrt(mse(y_pred, y_train)))
@@ -29,6 +31,7 @@ print('MAE:', mae(y_pred, y_train))
 
 print('\n')
 
+print("Đánh giá training set (IMERG): ")
 print('Person R:', pearsonr(y_train, z_train))
 print('RMSE:', np.sqrt(mse(z_train, y_train)))
 print('MAE:', mae(z_train, y_train))
@@ -36,6 +39,8 @@ print('MAE:', mae(z_train, y_train))
 print('\n')
 
 y1_pred = lr_model.predict(X_val)
+
+print("Đánh giá validation set (LR): ")
 print('R2 score:', r2_score(y_val, y1_pred))
 print('Person R:', pearsonr(y_val, y1_pred))
 print('RMSE:', np.sqrt(mse(y1_pred, y_val)))
@@ -43,6 +48,7 @@ print('MAE:', mae(y1_pred, y_val))
 
 print('\n')
 
+print("Đánh giá validation set (LR): ")
 print('Person R:', pearsonr(y_val, z_val))
 print('RMSE:', np.sqrt(mse(z_val, y_val)))
 print('MAE:', mae(z_val, y_val))
@@ -50,6 +56,7 @@ print('MAE:', mae(z_val, y_val))
 print('\n')
 
 y2_pred = lr_model.predict(X_test)
+print("Đánh giá testing set (LR): ")
 print('R2 score:', r2_score(y_test, y2_pred))
 print('Person R:', pearsonr(y_test, y2_pred))
 print('RMSE:', np.sqrt(mse(y2_pred, y_test)))
@@ -57,6 +64,7 @@ print('MAE:', mae(y2_pred, y_test))
 
 print('\n')
 
+print("Đánh giá testing set (IMERG): ")
 print('Person R:', pearsonr(y_test, z_test))
 print('RMSE:', np.sqrt(mse(z_test, y_test)))
 print('MAE:', mae(z_test, y_test))
