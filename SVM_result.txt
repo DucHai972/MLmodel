@@ -1,0 +1,40 @@
+Đánh giá training set (SVM): 
+R2 score: 0.921231657008205
+Person R: PearsonRResult(statistic=0.9606895166362394, pvalue=0.0)
+RMSE: 0.6617637256793183
+MAE: 0.12559062984226224
+
+
+Đánh giá training set (IMERG): 
+Person R: PearsonRResult(statistic=0.23916052233438262, pvalue=0.0)
+RMSE: 4.298603590105161
+MAE: 0.9711214267765128
+
+
+Đánh giá validating set (SVM): 
+R2 score: -0.0017513416108176916
+Person R: PearsonRResult(statistic=0.2693936756785429, pvalue=0.0)
+RMSE: 2.4514482705162974
+MAE: 0.6267674910653037
+
+
+Đánh giá validating set (IMERG): 
+Person R: PearsonRResult(statistic=0.22369739091816643, pvalue=0.0)
+RMSE: 4.355255193962962
+MAE: 1.0003931949162528
+
+
+Đánh giá testing set (SVM): 
+R2 score: 0.004943582917189104
+Person R: PearsonRResult(statistic=0.3255001981696252, pvalue=0.0)
+RMSE: 2.233334154552777
+MAE: 0.5930844683116666
+
+
+Đánh giá testing set (IMERG): 
+Person R: PearsonRResult(statistic=0.2490909874299027, pvalue=1.517286103188456e-227)
+RMSE: 4.3186253917321995
+MAE: 0.9559037414932041
+Dumping ... 
+
+Process finished with exit code 0
