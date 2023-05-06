@@ -1,0 +1,38 @@
+Đánh giá training set (NN): 
+R2 score: 0.10290170837634038
+RMSE: 2.2333002669632696
+MAE: 0.649072817923866
+
+
+Đánh giá training set (IMERG): 
+Person R: PearsonRResult(statistic=0.23916052233438262, pvalue=0.0)
+RMSE: 4.298603590105161
+MAE: 0.9711214267765128
+
+
+1013/1013 [==============================] - 1s 710us/step
+Đánh giá validation set (NN): 
+R2 score: 0.08102207412348605
+RMSE: 2.347984938911956
+MAE: 0.6555508720148224
+
+
+Đánh giá validation set (IMERG): 
+Person R: PearsonRResult(statistic=0.22369739091816643, pvalue=0.0)
+RMSE: 4.355255193962962
+MAE: 1.0003931949162528
+
+
+507/507 [==============================] - 0s 576us/step
+Đánh giá testing set (NN): 
+R2 score: 0.0928153592750921
+RMSE: 2.1324443172984253
+MAE: 0.625986706979432
+
+
+Đánh giá testing set (IMERG): 
+Person R: PearsonRResult(statistic=0.2490909874299027, pvalue=1.517286103188456e-227)
+RMSE: 4.3186253917321995
+MAE: 0.9559037414932041
+
+Process finished with exit code 0
