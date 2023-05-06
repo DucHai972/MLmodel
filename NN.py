@@ -78,6 +78,7 @@ print('R2 score:', r2_score(y_val, y1_pred))
 print('RMSE:', np.sqrt(mse(y1_pred, y_val)))
 print('MAE:', mae(y1_pred, y_val))
 
+
 print('\n')
 
 print("Đánh giá validation set (IMERG): ")
