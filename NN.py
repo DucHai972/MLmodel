@@ -57,6 +57,9 @@ model = load_model('NN.h5')
 print("Predicting... ")
 y_pred = model.predict(X_train)
 
+y_train = np.array(y_train)
+y_pred = y_pred.flatten()
+
 print("Đánh giá training set (NN): ")
 print('R2 score:', r2_score(y_train, y_pred))
 print('RMSE:', np.sqrt(mse(y_pred, y_train)))
@@ -72,6 +75,9 @@ print('MAE:', mae(z_train, y_train))
 print('\n')
 
 y1_pred = model.predict(X_val)
+
+y_val = np.array(y_val)
+y1_pred = y1_pred.flatten()
 
 print("Đánh giá validation set (NN): ")
 print('R2 score:', r2_score(y_val, y1_pred))
@@ -89,6 +95,10 @@ print('MAE:', mae(z_val, y_val))
 print('\n')
 
 y2_pred = model.predict(X_test)
+
+y_test = np.array(y_test)
+y2_pred = y2_pred.flatten()
+
 print("Đánh giá testing set (NN): ")
 print('R2 score:', r2_score(y_test, y2_pred))
 print('RMSE:', np.sqrt(mse(y2_pred, y_test)))
